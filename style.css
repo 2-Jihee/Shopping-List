@@ -1,0 +1,68 @@
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(182, 195, 211);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 600px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(to right, pink, rgb(75, 159, 255))
+}
+
+h3 {
+    color: white;
+}
+
+.contents {
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(231, 230, 230);
+}
+
+#shopping-list {
+    height: 95%;
+}
+
+#shopping-list-form {
+    display: flex;
+    height: 5%;
+}
+
+input {
+    width: 100%;
+    border: none;
+}
+
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10%;
+    border-radius: 0 0 20px 20px;
+    background: linear-gradient(to right, pink, rgb(75, 159, 255))
+}
+
+button {
+    background-color:transparent;
+    border: none;
+}
+.add_btn {
+    width: 40px;
+    height: 40px;
+}
