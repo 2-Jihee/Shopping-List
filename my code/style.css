@@ -36,11 +36,27 @@ h3 {
 }
 
 #shopping-list {
+    display: flex;
+    flex-direction: column;
     height: 95%;
+    padding: 0 20px 0 20px;
+}
+
+li {
+    display: flex;
+    flex-direction: row;
+}
+
+span {
+    width: 95%;
+}
+
+span.button {
+    width: 5%;
+    padding-right: 10px;
 }
 
 #shopping-list-form {
-    display: flex;
     height: 5%;
 }
 
