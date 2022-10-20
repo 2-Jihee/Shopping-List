@@ -4,17 +4,14 @@ const addBtn = document.querySelector('.footer__button');
 
 
 function onAdd() {
-    // 1. 사용자가 입력한 텍스트를 받아옴
     const text = input.value;
     if (text === '') {
         input.focus();
         return;
     }
-    // 2. 새로운 아이템을 만듬 (텍스트 + 삭제버튼)
     const item = createItem(text);
-    // 3. items 컨테이너 안에 새로 만든 아이템을 추가한다.
     items.appendChild(item);
-    // 4. 인풋을 초기화 한다.
+    item.scrollIntoView({block:'center'});
     input.value = '';
     input.focus();   //input 작성 후 다시 커서가 input으로 돌아감
 }
@@ -52,6 +49,8 @@ function createItem(text) {
 addBtn.addEventListener('click', () => {
     onAdd();
 })
-input.addEventListener('keypress', (event) => {
-    onAdd();
+input.addEventListener('keypress', event => {
+    if(event.key === 'Enter') {
+        onAdd();
+    }
 });
